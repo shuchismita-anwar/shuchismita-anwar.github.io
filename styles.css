@@ -8,7 +8,7 @@
   --border: #e5e7ef;
   --shadow: 0 12px 28px rgba(17, 24, 39, 0.06);
   --radius: 10px;
-  --max-width: 1280px;
+  --max-width: 1400px;
   --font-sans: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-serif: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
@@ -285,7 +285,7 @@ img {
 
 .highlight {
   font-weight: 600;
-  color: #800000;
+  color: #800000 !important;
 }
 
 .grid {
