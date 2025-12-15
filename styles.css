@@ -8,7 +8,7 @@
   --border: #e5e7ef;
   --shadow: 0 12px 28px rgba(17, 24, 39, 0.06);
   --radius: 10px;
-  --max-width: 1120px;
+  --max-width: 1280px;
   --font-sans: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-serif: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
@@ -285,7 +285,7 @@ img {
 
 .highlight {
   font-weight: 600;
-  color: var(--text);
+  color: #800000;
 }
 
 .grid {
@@ -432,6 +432,21 @@ img {
   margin-top: 0.75rem;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body {
+  display: grid;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.project-footer {
+  margin-top: 0.75rem;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -456,7 +471,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.8rem;
+  align-items: center;
+}
+
+.publication-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.publication-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-body {
+  display: grid;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.publication-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
 }
 
 .site-footer {

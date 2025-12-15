@@ -88,7 +88,10 @@ function renderProjects() {
   list.innerHTML = ""
   projects.slice(0, visibleProjects).forEach((project) => {
     const card = document.createElement("div")
-    card.className = "card"
+    card.className = "card project-card"
+
+    const body = document.createElement("div")
+    body.className = "project-body"
 
     const title = document.createElement("div")
     title.className = "project-title"
@@ -96,6 +99,12 @@ function renderProjects() {
 
     const desc = document.createElement("p")
     desc.textContent = project.description
+
+    body.appendChild(title)
+    body.appendChild(desc)
+
+    const footer = document.createElement("div")
+    footer.className = "project-footer"
 
     const links = document.createElement("div")
     links.className = "project-links"
@@ -107,9 +116,10 @@ function renderProjects() {
     github.textContent = "GitHub"
     links.appendChild(github)
 
-    card.appendChild(title)
-    card.appendChild(desc)
-    card.appendChild(links)
+    footer.appendChild(links)
+
+    card.appendChild(body)
+    card.appendChild(footer)
     list.appendChild(card)
   })
 
@@ -157,7 +167,10 @@ function renderPublications(publications) {
 
   publications.forEach((pub) => {
     const card = document.createElement("div")
-    card.className = "card"
+    card.className = "card publication-card"
+
+    const body = document.createElement("div")
+    body.className = "publication-body"
 
     const title = document.createElement("h3")
     title.textContent = pub.title
@@ -184,8 +197,15 @@ function renderPublications(publications) {
     const desc = document.createElement("p")
     desc.textContent = pub.description || ""
 
+    body.appendChild(title)
+    body.appendChild(meta)
+    body.appendChild(desc)
+
+    const footer = document.createElement("div")
+    footer.className = "publication-footer"
+
     const links = document.createElement("div")
-    links.className = "project-links"
+    links.className = "publication-links"
     if (pub.preprintUrl) {
       links.appendChild(buildLink(pub.preprintUrl, "Preprint"))
     }
@@ -205,11 +225,11 @@ function renderPublications(publications) {
       tags.appendChild(pill)
     })
 
-    card.appendChild(title)
-    card.appendChild(meta)
-    card.appendChild(desc)
-    if (links.childNodes.length) card.appendChild(links)
-    if (tags.childNodes.length) card.appendChild(tags)
+    footer.appendChild(links)
+    footer.appendChild(tags)
+
+    card.appendChild(body)
+    card.appendChild(footer)
     container.appendChild(card)
   })
 }
