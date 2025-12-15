@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Eyes on the Image: Gaze-Supervised Multimodal Learning for Chest X-ray Diagnosis and Report Generation",
+    "authors": [
+      "Tanjim Islam Riju*",
+      "Shuchismita Anwar*",
+      "Saman Sarker Joy",
+      "Farig Sadeque",
+      "Swakkhar Shatabda"
+    ],
+    "venue": "Submitted to Computers in Biology and Medicine",
+    "status": "Under Review",
+    "description": "Two-stage multimodal framework that integrates chest X-ray images, clinical labels, bounding boxes, and radiologist gaze data. A gaze-guided contrastive model improves disease classification (F1 up 5.7%, AUC up 3.4%), while a region-grounded report generation pipeline produces more accurate and interpretable radiology reports.",
+    "preprintUrl": "https://arxiv.org/pdf/2508.13068",
+    "tags": ["Multimodal Learning", "Medical Imaging", "Gaze Tracking", "Report Generation"]
+  },
+  {
+    "title": "Hybrid Quantum-Classical Learning for Multiclass Image Classification",
+    "authors": [
+      "Shuchismita Anwar",
+      "Sowmitra Das",
+      "Muhammad Iqbal Hossain",
+      "Jishnu Mahmud"
+    ],
+    "venue": "Journal of Quantum Machine Intelligence · 2025",
+    "status": "Under Review",
+    "description": "Hybrid quantum-classical QCNN that reuses qubits discarded during pooling to preserve entanglement while coupling recycled qubits with classical layers. Achieves higher accuracy on MNIST, Fashion-MNIST, and OrganAMNIST with a lightweight parameter footprint suitable for NISQ hardware.",
+    "preprintUrl": "https://arxiv.org/pdf/2508.18161",
+    "tags": ["Quantum Computing", "Hybrid Learning", "Image Classification", "NISQ"]
+  }
+]

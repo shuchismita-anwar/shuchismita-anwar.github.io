@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuchismita Anwar | Academic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <div class="brand">Shuchismita Anwar</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro plain">
+      <div class="container about-flex">
+        <div class="profile-block">
+          <div class="avatar-frame round">
+            <img src="./public/academic-portrait.png" alt="Shuchismita Anwar portrait">
+          </div>
+          <div class="tagline">Machine Learning | Computer Vision | Human-Centric AI</div>
+          <h1 class="profile-name">Shuchismita Anwar</h1>
+          <p class="lede compact">
+            Advancing intelligent systems at the intersection of computational imaging, large language models, and multimodal AI through rigorous research and development.
+          </p>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <a href="https://www.bracu.ac.bd/" target="_blank" rel="noopener noreferrer">Brac University</a>
+            </div>
+            <button id="copy-email" class="info-item link-btn">
+              <span class="icon">✉️</span>
+              <span id="email-text">shuchismita.anwar@gmail.com</span>
+            </button>
+          </div>
+          <div class="action-row compact">
+            <a class="btn ghost" href="https://scholar.google.com/citations?user=zIvEZFAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/shuchismita-anwar-034759218/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/shuchismita-anwar" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+          <div class="copy-status" id="copy-status" aria-live="polite"></div>
+        </div>
+
+        <div class="about-block" id="about">
+          <h2>About Me</h2>
+          <!-- <p>Welcome to my space! 👋</p> -->
+          <p>
+            I am a researcher in artificial intelligence with a strong background in machine learning and multimodal learning. My work explores how computational models can be made more efficient, interpretable, and impactful, with applications ranging from multimodal learning to medical data analysis.
+          </p>
+          <p>
+            Currently, I serve as a Graduate Research Assistant at BRAC University, contributing to projects on medical imaging, multimodal report generation, and lightweight neural architectures.
+          </p>
+          <p class="highlight">
+            I am preparing to pursue a Ph.D. in artificial intelligence and machine learning, with the goal of advancing methods that are both theoretically grounded and practically meaningful.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Publications</h2>
+          <div class="separator"></div>
+        </div>
+        <div id="publications-list" class="grid"></div>
+        <div id="publications-error" class="error-text" hidden>Unable to load publications right now.</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <div class="separator"></div>
+        </div>
+        <div id="projects-list" class="grid"></div>
+        <div class="center">
+          <button id="load-more" class="btn outline">Load More Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <div class="card-title-row">
+              <h3>Graduate Research Assistant</h3>
+              <span class="pill">BRAC University · 2025 - Present</span>
+            </div>
+            <p>
+              Contributing to research in multimodal AI and lightweight neural architectures. Involved in literature reviews, experimental design, publication writing, and guiding undergraduate thesis students.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title-row">
+              <h3>Student Tutor (Undergraduate Teaching Assistant)</h3>
+              <span class="pill">BRAC University · 2023 - 2024</span>
+            </div>
+            <p>
+              Mentored students through labs, graded assignments, and provided guidance during office hours, deepening both my subject mastery and my ability to communicate complex concepts clearly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Education</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="card">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Bachelor of Science in Computer Science & Engineering</h3>
+              <p class="muted">BRAC University · 2020 - 2024</p>
+              <p class="muted small">Highest Distinction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Awards & Honors</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="card stack">
+          <div class="award">
+            <div class="award-head">
+              <h3>Highest Distinction</h3>
+              <a class="link-inline" href="https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors" target="_blank" rel="noopener noreferrer">Policy</a>
+            </div>
+            <p class="muted small">BRAC University · 2024</p>
+            <p class="muted small">Awarded to candidates whose CGPA is 3.80 or higher</p>
+          </div>
+          <div class="award">
+            <h3>Dean's List</h3>
+            <p class="muted small">BRAC University</p>
+          </div>
+          <div class="award">
+            <h3>VC's List</h3>
+            <p class="muted small">BRAC University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="contact-grid">
+          <button class="card contact-card" id="contact-email">
+            <div class="icon-circle">✉️</div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value" id="contact-email-text">shuchismita.anwar@gmail.com</div>
+          </button>
+          <a class="card contact-card" href="https://scholar.google.com/citations?user=zIvEZFAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            <div class="icon-circle">📖</div>
+            <div class="contact-label">Google Scholar</div>
+            <div class="contact-value">View Profile</div>
+          </a>
+          <a class="card contact-card" href="https://www.linkedin.com/in/shuchismita-anwar-034759218/" target="_blank" rel="noopener noreferrer">
+            <div class="icon-circle">🔗</div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">Connect</div>
+          </a>
+          <a class="card contact-card" href="https://github.com/shuchismita-anwar" target="_blank" rel="noopener noreferrer">
+            <div class="icon-circle">💻</div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">Repositories</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>(c) 2025 Shuchismita Anwar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
