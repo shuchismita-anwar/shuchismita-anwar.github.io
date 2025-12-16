@@ -61,17 +61,22 @@ function wireEmailCopy() {
 
   const handleCopy = async () => {
     const status = document.getElementById("copy-status")
+    const statusContact = document.getElementById("copy-status-contact")
     try {
       await navigator.clipboard.writeText(EMAIL)
-      if (status) {
-        status.textContent = "Copied!"
-        setTimeout(() => (status.textContent = ""), 1800)
-      }
+      ;[status, statusContact].forEach((el) => {
+        if (el) {
+          el.textContent = "Copied!"
+          setTimeout(() => (el.textContent = ""), 1800)
+        }
+      })
     } catch (err) {
-      if (status) {
-        status.textContent = "Copy failed"
-        setTimeout(() => (status.textContent = ""), 1800)
-      }
+      ;[status, statusContact].forEach((el) => {
+        if (el) {
+          el.textContent = "Copy failed"
+          setTimeout(() => (el.textContent = ""), 1800)
+        }
+      })
       console.error("Copy failed:", err)
     }
   }
