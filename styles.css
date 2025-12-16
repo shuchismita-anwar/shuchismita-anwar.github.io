@@ -381,6 +381,7 @@ img {
   text-align: center;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-family: var(--font-sans);
 }
 
 .contact-card:hover {
@@ -408,11 +409,13 @@ img {
 .contact-label {
   font-weight: 700;
   margin-bottom: 0.2rem;
+  font-family: var(--font-sans);
 }
 
 .contact-value {
   color: var(--muted);
   font-size: 0.95rem;
+  font-family: var(--font-sans);
 }
 
 .center {
